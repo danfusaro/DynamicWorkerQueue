@@ -3,24 +3,24 @@ Spin up an infinite number of self-executing, parallel dynamic worker threads in
 # Usage
 ```js
 // Instantiate object
-var wf = new WorkerFactory();
+var wq = new WorkerQueue();
 
 // Define worker inline
 var test = function(event){
-	console.log("From caller: " + event.data);
+  console.log("From caller: " + event.data);
     postMessage('hi there, stranger');
   };
   
 // Add definition to worker queue and define 'postMessage' callback
-wf.toWorker(test, 
-	function(worker){
+wq.toWorker(test, 
+  function(worker){
 
-		// This happens when the worker posts a message
-		worker.onmessage = function(e){
-    								console.log('From worker: ' + e.data)
+    // This happens when the worker posts a message
+    worker.onmessage = function(e){
+                    console.log('From worker: ' + e.data)
                   };
 
     // Execute the defined method
-  	worker.postMessage("hey worker");
+    worker.postMessage("hey worker");
   });
 ```
