@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-worker-queue",
+  "homepage": "https://github.com/foozebox/DynamicWorkerQueue",
+  "authors": [
+    "Dan Fusaro <dan.fusaro@gmail.com>"
+  ],
+  "description": "Spin up an infinite number of self-executing, parallel dynamic worker threads in a queue.",
+  "main": "workerqueue.js",
+  "moduleType": [],
+  "keywords": [
+    "worker",
+    "queueing",
+    "parallel",
+    "threading",
+    "threads"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
