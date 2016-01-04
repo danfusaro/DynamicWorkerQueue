@@ -1,5 +1,5 @@
 # DynamicWorkerQueue
-Spin up an infinite number of self-executing dynamic worker threads in a queue.  
+Spin up an infinite number of self-executing, parallel dynamic worker threads in a queue.  
 # Usage
 ```js
 // Instantiate object
