@@ -9,7 +9,7 @@
 
         var urlProvider = window.URL || window.webkitURL || null;
 
-        exports.toWorker = function(workFunction, callback) {
+        exports.addWorker = function(workFunction, callback) {
             var workers = queued;
             var workerInfo = {
                 workFunction: workFunction,

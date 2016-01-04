@@ -12,7 +12,7 @@ var test = function(event){
   };
   
 // Add definition to worker queue and define 'postMessage' callback
-wq.toWorker(test, 
+wq.addWorker(test, 
   function(worker){
 
     // This happens when the worker posts a message
