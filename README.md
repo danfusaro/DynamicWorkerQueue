@@ -1,5 +1,9 @@
 # DynamicWorkerQueue
 Spin up an infinite number of self-executing, parallel dynamic worker threads in a queue.  
+#Bower
+```
+bower install dynamic-worker-queue
+```
 # Usage
 ```js
 // Instantiate object
