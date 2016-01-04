@@ -1,7 +1,7 @@
 # DynamicWorkerQueue
-Spin up an infinite number of self-executing dynamic worker threads in a queue.  
+Spin up an infinite number of self-executing, parallel dynamic worker threads in a queue.  
 # Usage
-'''js
+```js
 // Instantiate object
 var wf = new WorkerFactory();
 
@@ -23,4 +23,4 @@ wf.toWorker(test,
     // Execute the defined method
   	worker.postMessage("hey worker");
   });
- '''
+```
